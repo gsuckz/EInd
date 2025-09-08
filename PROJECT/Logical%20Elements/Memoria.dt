@@ -1,0 +1,3 @@
+TYPE
+    Memory : ARRAY[0..49] of real;
+END_TYPE

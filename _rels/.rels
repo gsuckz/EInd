@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+    <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/_properties/Core.xml" Id="R8342ed8ad1644919" />
+    <Relationship Type="http://schemas.kw-software.com/packagesolutionstorage/2008/relationships/metadata/extended-properties" Target="/_properties/Extended.xml" Id="R86e5220289a246b3" />
+    <Relationship Type="http://schemas.kw-software.com/packagesolutionstorage/2008/relationships/metadata/additional-properties" Target="/_properties/Additional.xml" Id="R66ffd71519d04eb0" />
+    <Relationship Type="http://schemas.kw-software.com/packagesolutionstorage/2008/relationships/content" Target="/PROJECT/PROJECT.proj" Id="Ra49549cb9f8f47ce" />
+</Relationships>

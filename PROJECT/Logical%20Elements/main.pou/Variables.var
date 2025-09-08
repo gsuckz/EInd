@@ -1,0 +1,74 @@
+{ CustomGroupDefinition('a04e0da4-75a3-431c-a769-2ffcda83b779', '') }
+
+VAR_GLOBAL
+    C001 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('8c4c3024-c7bb-412d-ba0d-52c5ef4e078a')};
+END_VAR
+
+VAR_EXTERNAL
+    iSensor_puro : UINT { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('9197dbdd-4730-4390-80d6-bcf39c06fcab')};
+    wSalida : WORD { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('3659d5bf-97d5-4bae-b09d-2f7979dcb5a3')};
+END_VAR
+
+VAR
+    valor : UINT { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('7e355314-f088-4dbe-aa2d-7b0f86a1dbf0')};
+END_VAR
+
+VAR_EXTERNAL
+    C004 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('13753105-42d3-4e0d-8cdd-41899678a8ef')};
+    i1 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('4520d3b9-9352-486e-ab3d-b94924413448')};
+    C005 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('78da2008-469f-43f1-b56f-e16d64ac857b')};
+END_VAR
+
+VAR
+    FPID1 : FPID { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('240c132b-66de-4303-9da1-f2f137d444a5')};
+    sensor_real : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('3041a30a-333d-41a3-98d0-ed7fcbebd000')};
+    min_out : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('7b384f33-52c1-46d8-9fe8-34b0effa2559')};
+    max_out : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('1111195d-f25d-41fb-9332-e2b7ecce42d6')};
+    set_point_prueba : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('e576351e-98ef-45ca-a7bf-7c1d60c442a7')};
+END_VAR
+
+VAR_EXTERNAL
+    set_ai1 : UINT { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('43a69ddb-5722-4e4d-9278-e4dce354c8f6')};
+END_VAR
+
+VAR
+    set_point_manual : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('eca9646c-f23e-4344-9a4d-53a9f0cff64f')};
+END_VAR
+
+VAR_EXTERNAL
+    hab_bomba : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('51ea8d1b-ec2f-4cf6-8ba9-cac882600c3e')};
+    auto_manual : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('f50782db-8ac7-4163-a2ca-780824e5e5ea')};
+    setpoint_HMI : INT { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('5c4c0866-0dc9-45d0-9a12-8e0d8007b828')};
+    TD : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('82513d5a-a609-42b8-9f11-85706ef48f70')};
+    TI : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('8624d28d-3be0-4eac-a4e2-eab3384dd2aa')};
+    KP : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('cb0e4289-bea9-4edc-aa3f-2dd7dc65bce3')};
+    sw_remoto_local : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('5a151fdb-67d1-4b4e-b57e-3dd8e0a38b1c')};
+    sw_auto_manual : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('89e991d4-1f62-4504-8856-fa4258a0990d')};
+    Bloqueo : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('0bcd2997-7d82-484c-b614-174b170b368b')};
+    falla_sobrecalentamiento : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('60c0e9f2-c27f-45b7-96bb-a9fb38541872')};
+    falla : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('827817c4-9430-445a-8644-7988d90559a3')};
+    set_point_local : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('bbcb0d14-86e4-4fed-aa91-ed164a796213')};
+    falla_sobrecarga : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('0e23535a-f7b1-4972-9a53-384553363aec')};
+    falla_bombavacio : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('ac84893f-2873-4373-b47f-1593dfafab49')};
+    falla_FF : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('4d1bdb0e-1d83-402f-a1eb-beb3e6d3507e')};
+    arranque_remoto : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('41b2cfd0-381c-4a1d-866c-5b1f68c14ba2')};
+    arranque_local : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('a485753f-0df7-4fa4-ba8e-407e23a24dbe')};
+    Parada : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('5a2775d0-50f7-4717-8977-e803294ee466')};
+    C006 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('a742c557-b820-4c04-8292-a8c189087514')};
+    velocidad_manual : INT { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('68d6f0e1-04f1-4c4f-bd21-04837665e066')};
+    Led_FF : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('e88ca322-5119-4c89-9d93-ba27a42a6563')};
+    Led_vacio : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('c14d8e39-40f4-415c-b0e2-e959983acca4')};
+    Led_sobrecarga : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('b1bb17c7-3873-4f40-bfb2-1353533d829b')};
+    reset_falla : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('309bf800-2db0-4923-a7b8-dba211ffe0f1')};
+    Parada_remoto : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('8e829821-3cb2-47b1-9e83-e2d37acae017')};
+    reset_fallaHMI : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('884465db-ca86-4590-a2e3-166046c77fc0')};
+    hab_bom : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('1ef42f53-5fea-4d3e-9cd3-8f4d88466d6a')};
+    sw_remoto_local_HMI : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('8f5df0f1-2ca7-4cd6-b869-83f96bf13531')};
+    sw_remoto_local_PLC : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('6ad73aa8-ded2-4b9a-ad46-89469bdd4fd2')};
+    Altura_Media : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('d4b22a5a-b143-4fe1-86dc-afffa62af2f6')};
+    KP_HMI : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('0e5dbcd8-ae69-4c13-b468-8615eab883e4')};
+    TI_HMI : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('67c0df37-6a3b-4070-bc7a-84a0f5d73b8d')};
+    TD_HMI : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('fa2d82a2-2408-4506-9656-d86f648977b1')};
+    setpoint_remoto_local : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('2c2c9726-5cc0-4c2d-9b5f-39baeb0923f2')};
+    Led_Bomba : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('49566819-96d3-4811-985c-2fa12efd8edf')};
+END_VAR

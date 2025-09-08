@@ -1,0 +1,20 @@
+{ CustomGroupDefinition('a04e0da4-75a3-431c-a769-2ffcda83b779', '') }
+
+VAR
+    Offset : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('30dede84-201e-459a-9ff8-cbad71bae2ed')};
+    i : INT { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('d3650cc0-d761-40da-8608-44eaf845cbd8')};
+END_VAR
+
+VAR_EXTERNAL
+    iSensor_puro : UINT { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('71fb5630-95de-4972-b0ff-6350a41a8925')};
+END_VAR
+
+VAR
+    Altura : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('f373b9bf-d0a2-4bb3-991b-40b9dfbf97a8')};
+    HistAlt : Memory { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('061ab6b6-d1e9-42f2-ae78-b65c78263c1c')};
+    SumAlt : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('53c1524d-2310-45c8-8c58-39a89521904c')};
+END_VAR
+
+VAR_EXTERNAL
+    Altura_Media : REAL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('71fe2405-f789-4a20-acc0-38f675d4400e')};
+END_VAR

@@ -1,0 +1,34 @@
+{ Type('AXCF2152') }
+RESOURCE IEC 61131-3
+{ DeviceProfileWorksheet('DeviceProfile', Id := 'a3710b16-2d2c-44e3-9d3d-4e6aae0deeab') }
+{ DeviceProfile(
+    Name := 'RES_30F7397E252640809282FA3957110AAE',
+    Parent := ( Name := 'AXCF2152', Version := '2023.0.0'), 
+    UpdateType := 'Manual',
+    DownloadFiles := 
+    [
+    ],
+    CommunicationParameters := 'DLL socomm.dll -ip192.168.1.21 -p41100 -to2000',
+    CommunicationType := 'TcpIp',
+    FilesIni := 
+    [
+    ],
+    DeviceDescription := 
+    (
+        MaxProgramSize := '8388608',
+        MaxDataSize := '33554424',
+        MaxRetainDataSize := '0',
+        MaxTaskPriority := '96',
+        Endianness := 'LittleEndian'
+    ),
+    CommunicationMetadata := 'UniqueId=TCP/IP;IsBackup=False'
+)}
+
+
+TASK Cycle (INTERVAL := T#100ms, PRIORITY := 0) { Watchdog(T#100ms), Id('411d28bb-1bec-42fe-8807-69e217db9b32') };
+
+PROGRAM Sensor1 WITH Cycle : main { Id('ba301441-b7a5-4ae8-9698-71af4c92f432') };
+
+PROGRAM promedio WITH Cycle : Sensor { Id('9434d4e8-e6e2-4c70-8687-6fa1bd2cf4c2') };
+
+END_RESOURCE
